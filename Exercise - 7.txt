@@ -1,0 +1,153 @@
+Exercise 7
+
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python (main)
+$ cd  git-init-exercise-7
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ ls -ltr
+total 1
+-rw-r--r-- 1 Nithi 197609 21 Feb  8 00:45 README.md
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ vi file.txt
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ vi file1.txt
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.txt
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ git add .
+warning: LF will be replaced by CRLF in file.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ git commit
+[main 37f6f4c] First commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 file.txt
+ create mode 100644 file1.txt
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 348 bytes | 348.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jahnavi-karanam/git-init-exercise-7.git
+   ec85357..37f6f4c  main -> main
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ git log
+commit 37f6f4ccb2cb026bfc612ae966bc3e21a9cd5640 (HEAD -> main, origin/main, origin/HEAD)
+Author: jahnavi-karanam <karanam.jahnavi@gmail.com>
+Date:   Mon Feb 8 00:46:54 2021 -0600
+
+    First commit
+
+commit ec85357562601e5670410a02538a4c2566bd6ee2
+Author: jahnavi-karanam <78553743+jahnavi-karanam@users.noreply.github.com>
+Date:   Mon Feb 8 00:45:31 2021 -0600
+
+    Initial commit
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ vi file2.txt
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ ls -ltr
+total 4
+-rw-r--r-- 1 Nithi 197609 21 Feb  8 00:45 README.md
+-rw-r--r-- 1 Nithi 197609 19 Feb  8 00:46 file.txt
+-rw-r--r-- 1 Nithi 197609 20 Feb  8 00:46 file1.txt
+-rw-r--r-- 1 Nithi 197609 20 Feb  8 00:47 file2.txt
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ git add .
+warning: LF will be replaced by CRLF in file2.txt.
+The file will have its original line endings in your working directory
+l
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ ls
+README.md  file.txt  file1.txt  file2.txt
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ git commit
+[main e6a7356] Second commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file2.txt
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 291 bytes | 291.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/jahnavi-karanam/git-init-exercise-7.git
+   37f6f4c..e6a7356  main -> main
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ git log
+commit e6a735624cee5ec3d6e4fd3b58cb0565bbd1fc6f (HEAD -> main, origin/main, origin/HEAD)
+Author: jahnavi-karanam <karanam.jahnavi@gmail.com>
+Date:   Mon Feb 8 00:47:57 2021 -0600
+
+    Second commit
+
+commit 37f6f4ccb2cb026bfc612ae966bc3e21a9cd5640
+Author: jahnavi-karanam <karanam.jahnavi@gmail.com>
+Date:   Mon Feb 8 00:46:54 2021 -0600
+
+    First commit
+
+commit ec85357562601e5670410a02538a4c2566bd6ee2
+Author: jahnavi-karanam <78553743+jahnavi-karanam@users.noreply.github.com>
+Date:   Mon Feb 8 00:45:31 2021 -0600
+
+    Initial commit
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ git reset --hard 37f6f4ccb2cb026bfc612ae966bc3e21a9cd5640
+HEAD is now at 37f6f4c First commit
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ git log
+commit 37f6f4ccb2cb026bfc612ae966bc3e21a9cd5640 (HEAD -> main)
+Author: jahnavi-karanam <karanam.jahnavi@gmail.com>
+Date:   Mon Feb 8 00:46:54 2021 -0600
+
+    First commit
+
+commit ec85357562601e5670410a02538a4c2566bd6ee2
+Author: jahnavi-karanam <78553743+jahnavi-karanam@users.noreply.github.com>
+Date:   Mon Feb 8 00:45:31 2021 -0600
+
+    Initial commit
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-exercise-7 (main)
+$ git status
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+
+
